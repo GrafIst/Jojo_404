@@ -1,0 +1,180 @@
+body{
+	overflow: hidden;
+	margin: 0;
+
+}
+
+.Loader{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  transition: 2s ease;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	z-index: 2;
+
+   .icoloader{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    }
+
+
+	}
+
+
+
+.Main{
+	width: 100vw;
+	background-color: white;
+	display: flex;
+  flex-direction: column;
+
+	.navbar{
+		width: 100%;
+		height: 15vh;
+		max-height: 60px;
+		background-color: lightgreen;
+		z-index: 1;
+
+		.btn_burger{
+
+									height: 100%;
+									border: none;
+									width: 100px;
+									background-color: lightgreen;
+
+			div{
+				width: 50%;
+				height: 5px;
+				background-color: white;
+				margin: 6px 19px;
+			}
+
+		}
+
+	}
+
+	.flex-menucover{
+		width:100%;
+		height: 100vh;
+		background-color:white;
+    display: flex;
+    flex-direction: row;
+
+		.menu{
+		height: 100vh;
+		background-color: black;
+		position: relative;
+		color: white;
+		overflow: hidden;
+		background: rgba(20, 20, 20, 0.5);
+		/* display:block; */
+
+		font-size: 1.5em;
+
+		transition: width 0.4s ease;
+
+
+		.li-hidden-1{
+			display: none;
+		}
+		.li-hidden-2{
+			display: none;
+		}
+		.li-hidden-3{
+			display: none;
+		}
+		.li-hidden-4{
+			display: none;
+		}
+
+		.li-visible-1:hover{
+			.li-hidden-1{
+				display:block;
+			}
+		}
+
+		.li-visible-2:hover{
+			.li-hidden-2{
+				display:block;
+			}
+		}
+
+		.li-visible-3:hover{
+			.li-hidden-3{
+				display:block;
+			}
+		}
+
+		.li-visible-4:hover{
+			.li-hidden-4{
+				display:block;
+			}
+		}
+
+		li{
+
+			 list-style-image: url("https://imgur.com/ppjxRWs");
+
+   		}
+		}
+
+	.cover{
+		position:relative;
+		z-index: 0;
+		width: 100%;
+		height: 100vh;
+		background-color:white;
+		}
+	}
+
+
+
+}
+
+
+
+
+
+.menu-is-closed{
+	width: 0px;
+	height: 0px;
+}
+
+.slide_cover{
+  margin-left: 250px;
+}
+
+.menu-is-open{
+	width: 250px;
+	height: 100vh;
+}
+
+.loader-is-closed{
+	display:none;
+}
+
+.loader-is-open{
+	display:flex;
+}
+
+.backdrop{
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+	position: absolute;
+	background-color: black;
+	opacity: 0.4;
+}
+
+.uDisappear{
+	display:none;
+}
+
+.uApprear{
+	display: block;
+}
