@@ -1,4 +1,8 @@
 @import "_variables.scss";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e9cfb96a23438c9b6b42008e3d92f9306d4b52d
 body{
 	overflow: hidden;
 	margin: 0;
@@ -39,7 +43,7 @@ body{
 		height: 15vh;
 		max-height: 60px;
 		background-color: lightgreen;
-		z-index: 1;
+		z-index: 2;
 
 		.btn_burger{
 
@@ -72,12 +76,27 @@ body{
 		position: relative;
 		color: white;
 		overflow: hidden;
-		background: rgba(20, 20, 20, 0.5);
+		background-image: url("../img/hdjojo.jpg");
+
+		background-position: 58% center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		/* display:block; */
-font-family: 'Montserrat', sans-serif;
+		z-index: 2;
+
 		font-size: 1.5em;
 
 		transition: width 0.4s ease;
+
+		a{
+			text-decoration: none;
+
+			&:link{color:yellow;}
+			&:visited{color:green;}
+			&:hover{color:red;}
+			&:active{color:blue;}
+
+		}
 
 
 		.li-hidden-1{
@@ -132,6 +151,7 @@ font-family: 'Montserrat', sans-serif;
 		background-image: url(../img/bgTiles.png);
 		background-repeat: repeat;
 		animation: 20s linear infinite slide;
+		color:white;
 		}
 	}
 }
@@ -170,7 +190,7 @@ font-family: 'Montserrat', sans-serif;
 .backdrop{
 	width: 100vw;
 	height: 100vh;
-	z-index: 0;
+	z-index: 1;
 	position: absolute;
 	background-color: black;
 	opacity: 0.4;
@@ -182,4 +202,13 @@ font-family: 'Montserrat', sans-serif;
 
 .uApprear{
 	display: block;
+}
+
+
+.fftext{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.fftitle{
+	font-family: 'Bangers', cursive;
 }
