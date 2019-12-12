@@ -10,12 +10,14 @@ function openingMenu() {
   if (menu == 0) { //SI le menu est fermé, alors on l'ouvre
     idMenu.classList.remove("menu-is-closed");
     idMenu.classList.add("menu-is-open");
-    idbckdropMenu.classList.remove("uDisappear"); 
+    idbckdropMenu.classList.remove("uDisappear");
+    idCover.classList.add("blur");
     menu = 1;
   } else { //SInon on le ferme
     idMenu.classList.remove("menu-is-open");
     idMenu.classList.add("menu-is-closed");
     idbckdropMenu.classList.add("uDisappear");
+    idCover.classList.remove("blur"); 
     menu = 0;
   }
 }
