@@ -4,17 +4,18 @@ var menu = 0; //le menu est fermé
 var idMenu = document.getElementById("menu");
 var idLoader = document.getElementById("loader");
 var idCover = document.getElementById("cover");
+var idbckdropMenu = document.getElementById("backdropMenu");
 
 function openingMenu() {
   if (menu == 0) { //SI le menu est fermé, alors on l'ouvre
     idMenu.classList.remove("menu-is-closed");
     idMenu.classList.add("menu-is-open");
-/* 		idCover.classList.add("backdrop"); */
+    idbckdropMenu.classList.remove("uDisappear"); 
     menu = 1;
   } else { //SInon on le ferme
     idMenu.classList.remove("menu-is-open");
     idMenu.classList.add("menu-is-closed");
-/* 		idCover.classList.remove("backdrop"); */
+    idbckdropMenu.classList.add("uDisappear");
     menu = 0;
   }
 }
