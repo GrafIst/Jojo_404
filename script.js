@@ -5,6 +5,7 @@ var idMenu = document.getElementById("menu");
 var idLoader = document.getElementById("loader");
 var idCover = document.getElementById("cover");
 var idbckdropMenu = document.getElementById("backdropMenu");
+var idError = document.getElementById("error");
 
 function openingMenu() {
   if (menu == 0) { //SI le menu est fermé, alors on l'ouvre
@@ -17,7 +18,7 @@ function openingMenu() {
     idMenu.classList.remove("menu-is-open");
     idMenu.classList.add("menu-is-closed");
     idbckdropMenu.classList.add("uDisappear");
-    idCover.classList.remove("blur"); 
+    idCover.classList.remove("blur");
     menu = 0;
   }
 }
@@ -36,4 +37,30 @@ function openingLoader() {
 
     loader = 0; //le loader est fermé
   }
+}
+
+
+
+var animation = 0;
+
+function displaceError(event){
+
+    idError.classList.remove("animationError");
+    var y = event.clientY;
+    var error = document.getElementById("error");
+    var displacement;
+    y-=500;
+
+    if (y>0) {
+      displacement = Math.abs(y)
+      displacement *= 0.15;
+      error.style.transform = "rotate3D(1,0,0.4,"+displacement+"deg)";
+      //le cursor est vers le bas
+    }
+    else {
+      displacement = Math.abs(y)
+      displacement *= -0.15;
+      error.style.transform = "rotate3D(1,0,0.4,"+displacement+"deg)";
+      //le curseur est vers le haut
+    }
 }

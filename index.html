@@ -32,6 +32,8 @@
 
       </button>
 
+      <img src="img/logo.png" alt="" height="40vh">
+
       <div class="burger">
 
       </div>
@@ -78,8 +80,10 @@
       </div>
       <div id="backdropMenu" onclick="openingMenu()" class="backdrop uDisappear"></div>
 
-      <div id="cover" class="cover">
-        Loading
+      <div id="cover" class="cover" onmousemove="displaceError(event)">
+        <div id="error" class="error404 animationError">
+          <h1>Error 404</h1>
+        </div>
       </div>
     </div>
 

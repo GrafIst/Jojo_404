@@ -16,7 +16,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-	z-index: 2;
+	z-index: 3;
 
    .icoloader{
     width: 200px;
@@ -66,6 +66,8 @@ body{
 		background-color: white;
 		z-index: 3;
 		box-shadow: 0 10px 25px 5px rgba(0,0,0,0.9);
+		display: flex;
+		align-items: center;
 
 		.btn_burger{
 
@@ -73,6 +75,7 @@ body{
 									border: none;
 									width: 100px;
 									background-color: white;
+									outline: 0;
 
 			div{
 				width: 50%;
@@ -180,18 +183,22 @@ body{
 		background-repeat: repeat;
 		animation: 20s linear infinite slide;
 		color:white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.error404{
+			font-size: 6em;
+			text-shadow: 0 6px 4px #000000;
+
+		}
+
+
+
+
 		}
 	}
 
-	// @media screen and (max-width:970px){
-	// 	.flex-menucover{
-	// 		display:block;
-	//
-	// 		.menu{
-	// 			background-position: center center;
-	// 		}
-	// 	}
-	// }
 }
 
 @keyframes slide{
@@ -211,6 +218,15 @@ body{
 			.menu{
 				position:absolute;
 				opacity: 0.95;
+				background-position: center center;
+			}
+
+			.cover{
+			 .error404{
+				font-size: 5em;
+				text-align: center;
+				margin: 5%;
+				}
 			}
 
 			.menu-is-open{
@@ -330,4 +346,17 @@ body{
 .blur{
 	transition: 2s ease;
 	filter:blur(3px);
+}
+
+.animationError{
+	animation: 5s ease-in-out infinite wigglyscale;
+}
+
+@keyframes wigglyscale{
+	from{transform: scale(1.0);}
+	35%{transform: scale(1.1);}
+	38%{transform: rotate3d(0,1,0,0deg) scale(1.1);}
+	62%{transform: rotate3d(0,1,0,360deg) scale(1.1);}
+	65%{transform: scale(1.1);}
+	to{transform: scale(1.0);}
 }
