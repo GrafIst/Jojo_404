@@ -9,12 +9,10 @@ body{
 
 a{
 	text-decoration: none;
-
 	&:link{color:$yellow;}
 	&:visited{color:$Lpurple;}
 	&:hover{color:$magenta;}
 	&:active{color:blue;}
-
 }
 
 .Loader{
@@ -32,15 +30,11 @@ a{
    .icoloader{
     width: 200px;
     height: 100px;
-
-
-
 		display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
-	flex-wrap:wrap;
-
+	  flex-direction: row;
+	  align-items: center;
+	  justify-content:space-around;
+		flex-wrap:wrap;
     }
 
 		.hirgana{
@@ -48,30 +42,23 @@ a{
 			color: white;
 			text-shadow: 3px 4px 0px $magenta;
 			font-family: 'Sawarabi Mincho', sans-serif;
-
 			animation-name: menacing;
-animation-duration: 1s;
-//animation-timing-function: ease-out;
-animation-delay: 0;
-animation-iteration-count: infinite;
-animation-direction: alternate;
-animation-fill-mode: forwards;
-    &:nth-child(1) {
-      animation-delay: 1 * $temp;
-    }
-    &:nth-child(2) {
-      animation-delay: 2 * $temp;
-    }
-    &:nth-child(3) {
-       animation-delay: 3 * $temp;
-    }
+			animation-duration: 1s;
+			animation-delay: 0;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+
+	    &:nth-child(1) {
+	      animation-delay: 1 * $temp;
+	    }
+	    &:nth-child(2) {
+	      animation-delay: 2 * $temp;
+	    }
+	    &:nth-child(3) {
+	       animation-delay: 3 * $temp;
+	    }
 }
-
-
-
-
-
-
 
 @keyframes menacing {
   from,
@@ -89,10 +76,7 @@ animation-fill-mode: forwards;
 		transform: translate3d(-4px, -4px, 0);
   }
 }
-	}
-
-
-
+}
 
 .Main{
 	width: 100vw;
@@ -111,12 +95,11 @@ animation-fill-mode: forwards;
 		align-items: center;
 
 		.btn_burger{
-
-									height: 100%;
-									border: none;
-									width: 100px;
-									background-color: white;
-									outline: 0;
+			height: 100%;
+			border: none;
+			width: 100px;
+			background-color: white;
+			outline: 0;
 
 			div{
 				width: 50%;
@@ -124,9 +107,7 @@ animation-fill-mode: forwards;
 				background-color: black;
 				margin: 6px 19px;
 			}
-
 		}
-
 	}
 
 	.flex-menucover{
@@ -136,9 +117,6 @@ animation-fill-mode: forwards;
     display: flex;
     flex-direction: row;
 
-
-
-
 		.menu{
 		height: 100vh;
 		background-color: black;
@@ -146,22 +124,13 @@ animation-fill-mode: forwards;
 		color: white;
 		overflow: hidden;
 		background-image: url("../img/hdjojo.jpg");
-
 		background-position: 61% center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		/* display:block; */
 		z-index: 2;
-
 		font-size: 1.5em;
-
 		transition: width 0.4s ease;
-
 		box-shadow: 11px 0 15px rgba(0,0,0,0.9);
-
-
-
-
 
 		.li-hidden-1{
 			display: none;
@@ -199,9 +168,7 @@ animation-fill-mode: forwards;
 				display:block;
 			}
 		}
-
-
-		}
+	}
 
 	.cover{
 		position:relative;
@@ -259,10 +226,8 @@ animation-fill-mode: forwards;
 					font-size: 2em;
 					white-space: pre-wrap;
 					text-decoration: none;
-
 				}
 			}
-
 		}
 
 		.jojo{
@@ -277,7 +242,6 @@ animation-fill-mode: forwards;
 			background-position: top;
 		}
 
-
 		.error404{
 			font-size: 6em;
 			text-shadow: 0 6px 4px #000000;
@@ -287,15 +251,12 @@ animation-fill-mode: forwards;
 			transition: 0.4s ease;
 		  }
 
-			h2 {font-family: 'Montserrat', sans-serif;
+			h2{
+				font-family: 'Montserrat', sans-serif;
 					text-shadow: 3px 2px 0px black;
 				}
-
-
-
 		}
 	}
-
 }
 
 @keyframes slide{
@@ -303,23 +264,16 @@ animation-fill-mode: forwards;
 	to{background-position: 356px 482px;}
 }
 
-
-
-
-
 @media screen and (max-width:970px){
 	.Main{
 		.flex-menucover{
 			display:block;
-
 			.menu{
 				position:absolute;
 				opacity: 0.95;
 				background-position: center center;
 			}
-
 			.cover{
-
 				.jojotalking{
 					.josephImg{
 						background-position: bottom 0 right 40%;
@@ -329,8 +283,6 @@ animation-fill-mode: forwards;
 						left:40%;
 					}
 				}
-
-
 			 .error404{
 				font-size: 5em;
 				text-align: center;
@@ -339,54 +291,12 @@ animation-fill-mode: forwards;
 				transition: 0.4s ease;
 				}
 			}
-
 			.menu-is-open{
 				width:100%;
 			}
-
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .menu-is-closed{
 	width: 0px;
@@ -394,31 +304,11 @@ animation-fill-mode: forwards;
 	padding-right: 0px;
 }
 
-// .slide_cover{
-//   margin-left: 250px;
-// }
-
 .menu-is-open{
 	width: 300px;
 	height: 100vh;
 	padding-right: 2%;
 }
-
-// @media screen and (max-width:970px){
-// 	.menu-is-open{
-// 		width: 100%;
-// 		height: 100vh;
-// 		padding-right: 0px;
-// 	}
-// 	.menu-is-closed{
-// 		width: 0px;
-// 		height: 0px;
-// 		padding-right: 0px;
-// 	}
-// }
-
-
-
 
 .loader-is-closed{
 	display:none;
@@ -471,10 +361,6 @@ animation-fill-mode: forwards;
 	65%{transform: scale(1.1);}
 	to{transform: scale(1.0);}
 }
-
-
-
-
 
 .animatinglogo{
 	animation: 4s ease logoanimate;

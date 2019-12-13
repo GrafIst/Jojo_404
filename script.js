@@ -27,19 +27,15 @@ function openingLoader() {
   if (loader == 0) { //SI le loader est fermé, alors on l'ouvre
     idLoader.classList.remove("loader-is-closed");
     idLoader.classList.add("loader-is-open");
-    // idCover.classList.add("slide_cover");
 
     loader = 1; //le loader est ouvert
   } else { //SInon on le ferme
     idLoader.classList.remove("loader-is-open");
     idLoader.classList.add("loader-is-closed");
-    // idCover.classList.remove("slide_cover");
 
     loader = 0; //le loader est fermé
   }
 }
-
-
 
 function changeDialogue(){
 
@@ -70,7 +66,6 @@ function changeDialogue(){
   }
 }
 
-
 function animatelogo(){
   var x = setTimeout(removeClass, 4050);
   document.getElementById("idlogo").classList.add("animatinglogo");
@@ -78,6 +73,4 @@ function animatelogo(){
   function removeClass(){
     document.getElementById('idlogo').classList.remove("animatinglogo");
   }
-
-
 }
