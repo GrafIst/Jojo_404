@@ -332,7 +332,6 @@ animation-fill-mode: forwards;
 
 
 			 .error404{
-				 text-shadow: 4px 2px 4px #000000;
 				font-size: 5em;
 				text-align: center;
 				margin: 5%;
@@ -483,6 +482,14 @@ animation-fill-mode: forwards;
 
 @keyframes logoanimate{
 	from{transform: translateX(0);}
-	50%{transform: translateX(85vw);}
+
+	15%{transform: rotate3d(0,1,0,0deg);}
+	25%{transform: rotate3d(0,1,0,360deg);}
+
+	50%{transform: translateX(80vw);}
+
+	75%{transform: rotate3d(0,1,0,360deg);}
+	85%{transform: rotate3d(0,1,0,0deg);}
+
 	to{transform: translateX(0);}
 }
