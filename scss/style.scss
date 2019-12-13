@@ -152,9 +152,9 @@ animation-fill-mode: forwards;
 		a{
 			text-decoration: none;
 
-			&:link{color:yellow;}
+			&:link{color:$yellow;}
 			&:visited{color:green;}
-			&:hover{color:red;}
+			&:hover{color:$magenta;}
 			&:active{color:blue;}
 
 		}
@@ -197,11 +197,7 @@ animation-fill-mode: forwards;
 			}
 		}
 
-		li{
 
-			 list-style-image: url("https://imgur.com/ppjxRWs");
-
-   		}
 		}
 
 	.cover{

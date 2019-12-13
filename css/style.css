@@ -117,13 +117,13 @@ body {
   text-decoration: none;
 }
 .Main .flex-menucover .menu a:link {
-  color: yellow;
+  color: #F0A202;
 }
 .Main .flex-menucover .menu a:visited {
   color: green;
 }
 .Main .flex-menucover .menu a:hover {
-  color: red;
+  color: #E81E64;
 }
 .Main .flex-menucover .menu a:active {
   color: blue;
@@ -151,9 +151,6 @@ body {
 }
 .Main .flex-menucover .menu .li-visible-4:hover .li-hidden-4 {
   display: block;
-}
-.Main .flex-menucover .menu li {
-  list-style-image: url("https://imgur.com/ppjxRWs");
 }
 .Main .flex-menucover .cover {
   position: relative;
