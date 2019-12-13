@@ -21,7 +21,7 @@ body{
    .icoloader{
     width: 200px;
     height: 100px;
-    background-color: white;
+
 
 
 		display: flex;
@@ -34,8 +34,9 @@ body{
 
 		.hirgana{
 			font-size: 50px;
-			color: $Lpurple;
-			text-shadow: 3px 4px 0px black;
+			color: white;
+			text-shadow: 3px 4px 0px $magenta;
+			font-family: 'Sawarabi Mincho', sans-serif;
 
 			animation-name: menacing;
 animation-duration: 1s;
@@ -213,15 +214,20 @@ animation-fill-mode: forwards;
 		animation: 20s linear infinite slide;
 		color:white;
 		display: flex;
+    flex-direction: column;
+		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+
 
 		.error404{
 			font-size: 6em;
 			text-shadow: 0 6px 4px #000000;
+			color: $white;
 
-		}
-
+		        }
+h2 {font-family: 'Montserrat', sans-serif;
+text-shadow: 3px 2px 0px black;}
 
 
 
@@ -352,7 +358,7 @@ animation-fill-mode: forwards;
 	z-index: 1;
 	position: absolute;
 	background-color: black;
-	opacity: 0.4;
+	opacity: 0.7;
 }
 
 .uDisappear{
