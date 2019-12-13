@@ -41,26 +41,26 @@ function openingLoader() {
 
 
 
-var animation = 0;
-
-function displaceError(event){
-
-    idError.classList.remove("animationError");
-    var y = event.clientY;
-    var error = document.getElementById("error");
-    var displacement;
-    y-=500;
-
-    if (y>0) {
-      displacement = Math.abs(y)
-      displacement *= 0.15;
-      error.style.transform = "rotate3D(1,0,0.4,"+displacement+"deg)";
-      //le cursor est vers le bas
-    }
-    else {
-      displacement = Math.abs(y)
-      displacement *= -0.15;
-      error.style.transform = "rotate3D(1,0,0.4,"+displacement+"deg)";
-      //le curseur est vers le haut
-    }
-}
+// var animation = 0;
+//
+// function displaceError(event){
+//
+//     idError.classList.remove("animationError");
+//     var y = event.clientY;
+//     var error = document.getElementById("error");
+//     var displacement;
+//     y-=500;
+//
+//     if (y>0) {
+//       displacement = Math.abs(y)
+//       displacement *= 0.15;
+//       error.style.transform = "rotate3D(1,0,0.4,"+displacement+"deg)";
+//       //le cursor est vers le bas
+//     }
+//     else {
+//       displacement = Math.abs(y)
+//       displacement *= -0.15;
+//       error.style.transform = "rotate3D(1,0,0.4,"+displacement+"deg)";
+//       //le curseur est vers le haut
+//     }
+// }
