@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="changeDialogue()">
   <div id="loader" class="Loader loader-is-closed" onclick="openingLoader();">
     <div class="icoloader">
 
@@ -85,21 +85,29 @@
 
       <div id="cover" class="cover">
 
-      <div id="cover" class="cover" onmousemove="displaceError(event)">
-<h2><b>Oh no!  This most be the work of an enemy server! ( ͠° ͟ʖ ͡°) </b></h2>
-<img src="https://thumbs.gfycat.com/SpeedyFewBlackcrappie-size_restricted.gif" height="100vh">
-        <div id="error" class="error404 animationError">
-          <h1>Error 404</h1>
+        <div id="cover" class="cover" onmousemove="displaceError(event)">
+
+          <div class="jojotalking">
+            <div class="josephImg"></div>
+            <div id="iddialogue" class="dialoguebox uDisappear">
+              <span class="textdialogue">Oh no! This must be the work of an enemy Stand!</span>
+            </div>
+          </div>
+
+
+
+          <div id="error" class="error404 animationError">
+            <h1>Error 404</h1>
+          </div>
         </div>
       </div>
+
     </div>
 
-  </div>
 
+    <script src="script.js">
 
-  <script src="script.js">
-
-  </script>
+    </script>
 
 </body>
 

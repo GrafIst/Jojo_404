@@ -64,3 +64,20 @@ function openingLoader() {
 //       //le curseur est vers le haut
 //     }
 // }
+
+
+function changeDialogue(){
+
+  var text=0;
+  var dialoguebox = document.getElementById('iddialogue');
+  var id = setInterval(frame, 5000);
+
+  function frame(){
+
+    if (text=0){
+      dialogbox.classList.remove("uDisappear");
+    }
+
+  }
+
+}

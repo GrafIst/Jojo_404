@@ -170,10 +170,63 @@ body {
   justify-content: center;
   align-items: center;
 }
+.Main .flex-menucover .cover .jojotalking {
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+}
+.Main .flex-menucover .cover .jojotalking .josephImg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/joseph.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom 0 right 20%;
+  transition: 0.4s ease;
+}
+.Main .flex-menucover .cover .jojotalking .dialoguebox {
+  width: 40%;
+  min-width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  left: 60%;
+  background-image: url("../img/dialogbox.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Main .flex-menucover .cover .jojotalking .dialoguebox .textdialogue {
+  width: 80%;
+  height: 60%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2em;
+  white-space: pre-wrap;
+}
+.Main .flex-menucover .cover .jojo {
+  width: 100%;
+  max-width: 680px;
+  height: 860px;
+  position: absolute;
+  bottom: 0px;
+  left: 7%;
+  background-image: url("../img/jojo.png");
+  background-size: cover;
+  background-position: top;
+}
 .Main .flex-menucover .cover .error404 {
   font-size: 6em;
   text-shadow: 0 6px 4px #000000;
   color: #F7F7F2;
+  padding-top: 300px;
+  margin-left: 25%;
+  transition: 0.4s ease;
 }
 .Main .flex-menucover .cover h2 {
   font-family: "Montserrat", sans-serif;
@@ -197,10 +250,19 @@ body {
     opacity: 0.95;
     background-position: center center;
   }
+  .Main .flex-menucover .cover .jojotalking .josephImg {
+    background-position: bottom 0 right 40%;
+    transition: 0.4s ease;
+  }
+  .Main .flex-menucover .cover .jojotalking .dialoguebox {
+    left: 40%;
+  }
   .Main .flex-menucover .cover .error404 {
     font-size: 5em;
     text-align: center;
     margin: 5%;
+    padding-top: 150px;
+    transition: 0.4s ease;
   }
   .Main .flex-menucover .menu-is-open {
     width: 100%;
@@ -236,7 +298,7 @@ body {
 }
 
 .uDisappear {
-  display: none;
+  display: none !important;
 }
 
 .uApprear {
