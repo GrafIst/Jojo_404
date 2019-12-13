@@ -72,7 +72,8 @@ function changeDialogue(){
   var dialogue=1;
   var dialoguebox = document.getElementById('iddialogue');
   var span = document.getElementById("idspan");
-  var id = setInterval(frame, 5000);
+//var t = setTimeout(function, -0.1);
+  var id = setInterval(frame, 2000);
 
   function frame(){
 
