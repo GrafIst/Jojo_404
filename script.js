@@ -72,7 +72,7 @@ function changeDialogue(){
   var dialogue=1;
   var dialoguebox = document.getElementById('iddialogue');
   var span = document.getElementById("idspan");
-  var id = setInterval(frame, 5000);
+  var id = setInterval(frame, 2000);
 
   function frame(){
 
@@ -92,7 +92,17 @@ function changeDialogue(){
       dialoguebox.classList.add("uDisappear");
       text=0;
     }
-
   }
+}
+
+
+function animatelogo(){
+  var x = setTimeout(removeClass, 4050);
+  document.getElementById("idlogo").classList.add("animatinglogo");
+
+  function removeClass(){
+    document.getElementById('idlogo').classList.remove("animatinglogo");
+  }
+
 
 }

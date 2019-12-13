@@ -4,6 +4,22 @@ body {
   font-family: "Bangers", cursive;
 }
 
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #F0A202;
+}
+a:visited {
+  color: #9F349A;
+}
+a:hover {
+  color: #E81E64;
+}
+a:active {
+  color: blue;
+}
+
 .Loader {
   width: 100vw;
   height: 100vh;
@@ -113,21 +129,6 @@ body {
   transition: width 0.4s ease;
   box-shadow: 11px 0 15px rgba(0, 0, 0, 0.9);
 }
-.Main .flex-menucover .menu a {
-  text-decoration: none;
-}
-.Main .flex-menucover .menu a:link {
-  color: #F0A202;
-}
-.Main .flex-menucover .menu a:visited {
-  color: green;
-}
-.Main .flex-menucover .menu a:hover {
-  color: #E81E64;
-}
-.Main .flex-menucover .menu a:active {
-  color: blue;
-}
 .Main .flex-menucover .menu .li-hidden-1 {
   display: none;
 }
@@ -205,6 +206,7 @@ body {
   text-align: center;
   font-size: 2em;
   white-space: pre-wrap;
+  text-decoration: none;
 }
 .Main .flex-menucover .cover .jojo {
   width: 100%;
@@ -337,6 +339,21 @@ body {
   }
   to {
     transform: scale(1);
+  }
+}
+.animatinglogo {
+  animation: 4s ease logoanimate;
+}
+
+@keyframes logoanimate {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(85vw);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 

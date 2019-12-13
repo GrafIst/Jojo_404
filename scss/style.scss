@@ -6,6 +6,17 @@ body{
 	font-family: 'Bangers', cursive;
 }
 
+
+a{
+	text-decoration: none;
+
+	&:link{color:$yellow;}
+	&:visited{color:$Lpurple;}
+	&:hover{color:$magenta;}
+	&:active{color:blue;}
+
+}
+
 .Loader{
   width: 100vw;
   height: 100vh;
@@ -149,15 +160,7 @@ animation-fill-mode: forwards;
 		box-shadow: 11px 0 15px rgba(0,0,0,0.9);
 
 
-		a{
-			text-decoration: none;
 
-			&:link{color:$yellow;}
-			&:visited{color:green;}
-			&:hover{color:$magenta;}
-			&:active{color:blue;}
-
-		}
 
 
 		.li-hidden-1{
@@ -255,24 +258,12 @@ animation-fill-mode: forwards;
 					text-align: center;
 					font-size: 2em;
 					white-space: pre-wrap;
+					text-decoration: none;
 
 				}
 			}
 
 		}
-
-		// .dialoguebox{
-		// 	width: 30%;
-		// 	min-width: 350px;
-		// 	height: 200px;
-		// 	position: absolute;
-		// 	margin-left: -100px;
-		// 	top: 60px;
-		// 	background-image: url("../img/dialogbox.png");
-		// 	background-size: contain;
-		// 	background-repeat: no-repeat;
-		// 	color: black;
-		// }
 
 		.jojo{
 			width: 100%;
@@ -479,4 +470,18 @@ animation-fill-mode: forwards;
 	62%{transform: rotate3d(0,1,0,360deg) scale(1.1);}
 	65%{transform: scale(1.1);}
 	to{transform: scale(1.0);}
+}
+
+
+
+
+
+.animatinglogo{
+	animation: 4s ease logoanimate;
+}
+
+@keyframes logoanimate{
+	from{transform: translateX(0);}
+	50%{transform: translateX(85vw);}
+	to{transform: translateX(0);}
 }
