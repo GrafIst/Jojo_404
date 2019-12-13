@@ -69,13 +69,28 @@ function openingLoader() {
 function changeDialogue(){
 
   var text=0;
+  var dialogue=1;
   var dialoguebox = document.getElementById('iddialogue');
+  var span = document.getElementById("idspan");
   var id = setInterval(frame, 5000);
 
   function frame(){
 
-    if (text=0){
-      dialogbox.classList.remove("uDisappear");
+    if (text==0){
+      if (dialogue==0) {
+        span.innerHTML = "Check <a href='https://youtu.be/dQw4w9WgXcQ'>here</a> ! You'll find out about the server status";
+        dialogue=1;
+      }
+      else {
+        span.innerHTML = "Oh no! This must be the work of an enemy Stand!";
+        dialogue=0;
+      }
+      dialoguebox.classList.remove("uDisappear");
+      text=1;
+    }
+    else {
+      dialoguebox.classList.add("uDisappear");
+      text=0;
     }
 
   }
